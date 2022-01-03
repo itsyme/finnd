@@ -1,0 +1,27 @@
+.app-shell__background {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    background-color: black;
+    width: 70vw;
+    margin-left: 11vw;
+    border-radius: 0px 0px 25px 25px;
+    opacity: 70%;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.app-shell__search-bar {
+    align-self: flex-end;
+    margin: 0.5rem;
+}
+
+.app-shell__logo {
+    color: white;
+    align-self: flex-start;
+    margin: 0.5rem;
+}

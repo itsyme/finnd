@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import PageHome from './pages/PageHome.js';
+import PageHome from './pages/PageHome/PageHome.js';
 
 function App() {
   return (
