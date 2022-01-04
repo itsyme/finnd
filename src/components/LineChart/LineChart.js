@@ -7,6 +7,7 @@ import {
     LineElement,
     Title,
     Tooltip,
+    Filler
   } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import './LineChart.css'
@@ -18,6 +19,7 @@ ChartJS.register(
     LineElement,
     Title,
     Tooltip,
+    Filler
 );
 
 const options = {
@@ -57,8 +59,9 @@ const data = {
     datasets: [{
         yAxisID: 'yAxis',
         xAxisID: 'xAxis',
-        data: [400, 200, 5000, 300, 500],
+        data: [400, 200, 500, 300, 500],
         fill: true,
+        backgroundColor: "rgba(75,192,192,0.1)",
         borderColor: 'rgb(75, 192, 192)',
         tension: 0.3
     }]

@@ -2,6 +2,7 @@ import React from 'react';
 import AppShell from '../../components/AppShell/AppShell.js';
 import InstrumentList from '../../components/InstrumentList/InstrumentList.js';
 import LineChart from '../../components/LineChart/LineChart.js';
+import DonutChart from '../../components/DonutChart/DonutChart.js';
 import './PageHome.css';
 
 function PageHome() {
