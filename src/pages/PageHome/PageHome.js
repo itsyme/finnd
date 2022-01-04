@@ -1,12 +1,15 @@
 import React from 'react';
 import AppShell from '../../components/AppShell/AppShell.js';
-import InstrumentTile from '../../components/InstrumentTile/InstrumentTile.js';
+import InstrumentList from '../../components/InstrumentList/InstrumentList.js';
+import LineChart from '../../components/LineChart/LineChart.js';
+import './PageHome.css';
 
 function PageHome() {
     return (
-        <div>
+        <div className='page-home__background'>
             <AppShell />
-            <InstrumentTile />
+            <InstrumentList />
+            <LineChart />
         </div>
         
     )

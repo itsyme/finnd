@@ -5,4 +5,9 @@
     border-radius: 25px;
     padding: 1rem 2rem;
     width: fit-content;
+    flex-shrink: 0;
+}
+
+.instrument-tile__background + .instrument-tile__background {
+    margin-left: 1rem;
 }
