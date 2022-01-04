@@ -2,11 +2,34 @@
     background-color: dimgrey;
     padding: 1rem 2vw;
     margin: 1rem 0rem;
-    width: 90vw;
+    width: 66vw;
     margin-left: 3vw;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
     justify-content: flex-start;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
+}
+
+.instrument-list__container {
+    display: inline-flex
+}
+
+.instrument-list__statistics-background {
+    padding: 1rem 2vw;
+    margin: 1rem 0rem;
+    border-radius: 0px 10px 10px 0px;
+    width: 20vw;
+    background-color: dimgrey;
+    color: whitesmoke;
+}
+
+.instrument-list__statistics {
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2vw 2vh;
+    border-radius: 10px;
+    opacity: 80%;
 }
