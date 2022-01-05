@@ -1,5 +1,5 @@
 .instrument-list__background {
-    background-color: rgb(105, 105, 105, 0.8);
+    background-color: rgb(105, 105, 105);
     padding: 1rem 2vw;
     margin: 1rem 0rem;
     width: 66vw;
@@ -20,7 +20,7 @@
     margin: 1rem 0rem;
     border-radius: 0px 15px 15px 0px;
     width: 20vw;
-    background-color: rgb(105, 105, 105, 0.8);
+    background-color: rgb(105, 105, 105);
     color: whitesmoke;
 }
 
@@ -30,6 +30,6 @@
     justify-content: space-between;
     background-color: black;
     padding: 2vw 2vh;
-    border-radius: 10px;
+    border-radius: 20px;
     opacity: 80%;
 }
