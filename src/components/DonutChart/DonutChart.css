@@ -1,4 +1,5 @@
 .donut-chart__background {
     height: 50vh;
     width: 45vw;
+    padding-left: 2.5vw;
 }

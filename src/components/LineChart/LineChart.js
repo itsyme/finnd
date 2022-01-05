@@ -61,8 +61,8 @@ const data = {
         xAxisID: 'xAxis',
         data: [400, 200, 500, 300, 500],
         fill: true,
-        backgroundColor: "rgba(75,192,192,0.1)",
-        borderColor: 'rgb(75, 192, 192)',
+        backgroundColor: "rgb(60, 255, 255, 0.1)",
+        borderColor: 'rgb(60, 255, 255, 0.75)',
         tension: 0.3
     }]
 };

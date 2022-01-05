@@ -1,8 +1,7 @@
 import React from 'react';
 import AppShell from '../../components/AppShell/AppShell.js';
 import InstrumentList from '../../components/InstrumentList/InstrumentList.js';
-import LineChart from '../../components/LineChart/LineChart.js';
-import DonutChart from '../../components/DonutChart/DonutChart.js';
+import Charts from '../../components/Charts/Charts.js';
 import './PageHome.css';
 
 function PageHome() {
@@ -10,7 +9,7 @@ function PageHome() {
         <div className='page-home__background'>
             <AppShell />
             <InstrumentList />
-            <LineChart />
+            <Charts />
         </div>
         
     )

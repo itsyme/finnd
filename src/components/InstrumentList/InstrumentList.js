@@ -6,12 +6,12 @@ function InstrumentList() {
     return (
         <div className='instrument-list__container'>
             <div className='instrument-list__background'>
-                <InstrumentTile className='instrument-list__instrument-tile'/>
-                <InstrumentTile className='instrument-list__instrument-tile'/>
-                <InstrumentTile className='instrument-list__instrument-tile'/>
-                <InstrumentTile className='instrument-list__instrument-tile'/>
-                <InstrumentTile className='instrument-list__instrument-tile'/>
-                <InstrumentTile className='instrument-list__instrument-tile'/>
+                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
+                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
+                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
+                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
+                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
+                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
             </div>
             <div className='instrument-list__statistics-background'>
                 <div className='instrument-list__statistics'>

@@ -4,7 +4,7 @@ import './AppShell.css';
 function AppShell() {
     return (
         <div className="app-shell__background">
-            <h3 className='app-shell__logo'>Finnd</h3>
+            <h2 className='app-shell__logo'>Finnd</h2>
             <input type="text" className="app-shell__search-bar" placeholder='Enter Ticker'/> 
         </div>
     )
