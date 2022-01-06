@@ -28,7 +28,8 @@
 }
 
 .app-shell__button:hover {
-    opacity: 80%
+    opacity: 80%;
+    cursor: pointer;
 }
 
 .app-shell__button:active {
@@ -95,10 +96,13 @@
 
 .form__submit-button:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .form__submit-button:active {
     transform: scale(1);
+    background-color: whitesmoke;
+    color: black
 }
 
 .app-shell__form-active {

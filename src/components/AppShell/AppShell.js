@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './AppShell.css';
 
 
@@ -6,6 +6,27 @@ function AppShell() {
 
     const [isActive, setIsActive] = useState(false);
     const onClick = () => setIsActive(!isActive);
+
+    const [ticker, setTicker] = useState("");
+    const [quantity, setQuantity] = useState("");
+    const [cost, setCost] = useState("");
+
+    const getTicker = (event) => {
+        setTicker(event.target.value)
+    }
+
+    const getQuantity = (event) => {
+        setQuantity(event.target.value)
+    }
+
+    const getCost = (event) => {
+        setCost(event.target.value)
+    }
+
+    const saveLocally = () => {
+        var savedObject = {'quantity': quantity, 'cost': cost}
+        localStorage.setItem(ticker, JSON.stringify(savedObject))
+    }
 
     return (
         <>
@@ -17,10 +38,10 @@ function AppShell() {
             </div>
             <div className={isActive ? 'form__background-active' : 'form__background-inactive'}>
                 <form className={isActive ? 'app-shell__form-active' : 'app-shell__form-inactive'}>
-                        <input className='form__input' type='text' placeholder='Ticker' required/>
-                        <input className='form__input' type='text' placeholder='Quantity' required/>
-                        <input className='form__input' type='text' placeholder='Cost' required/>
-                        <button className='form__submit-button' type='submit'>
+                        <input className='form__input' type='text' placeholder='Ticker' onChange={getTicker} required/>
+                        <input className='form__input' type='text' placeholder='Quantity' onChange={getQuantity} required/>
+                        <input className='form__input' type='text' placeholder='Cost' onChange={getCost} required/>
+                        <button className='form__submit-button' onClick={saveLocally} type='submit'>
                             Add
                         </button>
                 </form>
