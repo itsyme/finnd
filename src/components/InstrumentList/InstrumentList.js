@@ -3,15 +3,20 @@ import InstrumentTile from '../InstrumentTile/InstrumentTile.js';
 import './InstrumentList.css';
 
 function InstrumentList() {
+
+    var keys = Object.keys(localStorage);
+    var result = [];
+
+    for (let i = 0; i < keys.length; i++) {
+        var value = JSON.parse(localStorage.getItem(keys[i]));
+        var avgWeightedCost = Math.round(value.cost/value.quantity);
+        result.push(<InstrumentTile className='instrument-list__instrument-tile' ticker={keys[i]} price={avgWeightedCost} company='Tesla Inc.' quantity={value.quantity} key={i}/>)
+    }
+
     return (
         <div className='instrument-list__container'>
             <div className='instrument-list__background'>
-                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
-                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
-                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
-                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
-                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
-                <InstrumentTile className='instrument-list__instrument-tile' ticker='TSLA' price='1200' company='Tesla Inc.' quantity='100'/>
+                {result}
             </div>
             <div className='instrument-list__statistics-background'>
                 <div className='instrument-list__statistics'>
